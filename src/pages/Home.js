@@ -66,6 +66,13 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <div style={{ textAlign: "center" }}>
+        <div className="playercount">
+          <Link to="/more">
+            <p style={{ color: "white" }}>Learn more about the server</p>
+          </Link>
+        </div>
+      </div>
     </>
   );
 };
