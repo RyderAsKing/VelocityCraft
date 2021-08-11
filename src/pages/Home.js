@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+const axios = require("axios");
 const Home = () => {
+  const [status, setStatus] = useState([]);
+  if (status.length < 1) {
+    axios
+      .get(
+        "https://api.bybilly.uk/api/players/play.velocitycraft.net/25565",
+        {}
+      )
+      .then(function (response) {
+        setStatus(response.data.online);
+      });
+  }
   return (
     <>
       <div className="logo" style={{ textAlign: "center" }}>
@@ -56,20 +68,15 @@ const Home = () => {
       <div style={{ textAlign: "center" }}>
         <div className="playercount">
           <p>
-            Join{" "}
-            <span
-              className="sip"
-              data-ip="play.velocitycraft.net"
-              data-port={25565}
-            ></span>{" "}
-            other players on <span className="ip">play.velocitycraft.net</span>
+            Join <span className="sip">{status}</span> other players on{" "}
+            <span className="ip">play.velocitycraft.net</span>
           </p>
         </div>
       </div>
       <div style={{ textAlign: "center" }}>
         <div className="playercount">
           <Link to="/more">
-            <p style={{ color: "white" }}>Learn more about the server</p>
+            <p style={{ color: "white" }}>Learn more</p>
           </Link>
         </div>
       </div>
