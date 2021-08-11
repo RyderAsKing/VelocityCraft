@@ -1,9 +1,10 @@
-import React, { Link } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
       <div className="logo" style={{ textAlign: "center" }}>
-        <img src="img/image.png" alt="MyServer logo" />
+        <img src="img/image.png" alt="VelocityCraft Logo" />
       </div>
       <div className="items">
         <a href="https://discord.gg/gh9SFhAs4V" className="item forums">
@@ -13,8 +14,12 @@ const Home = () => {
               alt="Minecraft forums icon"
               className="img"
             />
-            <p className="subtitle">chat on our</p>
-            <p className="title">Discord server</p>
+            <p className="subtitle" style={{ textAlign: "center" }}>
+              chat on our
+            </p>
+            <p className="title" style={{ textAlign: "center" }}>
+              Discord Server
+            </p>
           </div>
         </a>
         <a href="https://shop.velocitycraft.net" className="item store">
@@ -24,19 +29,27 @@ const Home = () => {
               alt="Minecraft store icon"
               className="img"
             />
-            <p className="subtitle">donate on our</p>
-            <p className="title">Store</p>
+            <p className="subtitle" style={{ textAlign: "center" }}>
+              donate on our
+            </p>
+            <p className="title" style={{ textAlign: "center" }}>
+              Shop
+            </p>
           </div>
         </a>
-        <Link href="/vote" className="item vote">
+        <Link to="/vote" className="item vote">
           <div>
             <img
               src="img/vote.png"
               alt="Minecraft voting icon"
               className="img"
             />
-            <p className="subtitle">support us by</p>
-            <p className="title">Voting</p>
+            <p className="subtitle" style={{ textAlign: "center" }}>
+              support us by
+            </p>
+            <p className="title" style={{ textAlign: "center" }}>
+              Voting
+            </p>
           </div>
         </Link>
       </div>
