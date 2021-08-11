@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Link } from "react";
 const Home = () => {
   return (
     <>
@@ -6,7 +6,7 @@ const Home = () => {
         <img src="img/image.png" alt="MyServer logo" />
       </div>
       <div className="items">
-        <a href="#" className="item forums">
+        <a href="https://discord.gg/gh9SFhAs4V" className="item forums">
           <div>
             <img
               src="img/forums.png"
@@ -14,10 +14,10 @@ const Home = () => {
               className="img"
             />
             <p className="subtitle">chat on our</p>
-            <p className="title">Forums</p>
+            <p className="title">Discord server</p>
           </div>
         </a>
-        <a href="#" className="item store">
+        <a href="https://shop.velocitycraft.net" className="item store">
           <div>
             <img
               src="img/store.png"
@@ -28,7 +28,7 @@ const Home = () => {
             <p className="title">Store</p>
           </div>
         </a>
-        <a href="#" className="item vote">
+        <Link href="/vote" className="item vote">
           <div>
             <img
               src="img/vote.png"
@@ -38,7 +38,7 @@ const Home = () => {
             <p className="subtitle">support us by</p>
             <p className="title">Voting</p>
           </div>
-        </a>
+        </Link>
       </div>
       <div style={{ textAlign: "center" }}>
         <div className="playercount">
