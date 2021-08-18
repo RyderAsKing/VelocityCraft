@@ -43,7 +43,7 @@ const Vote = () => {
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "#69a2ff" }}
-                href="http://topminecraftservers.org/vote/18117"
+                href="https://topminecraftservers.org/vote/18117"
               >
                 TopMinecraftServers.org
               </a>
@@ -63,9 +63,9 @@ const Vote = () => {
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "#69a2ff" }}
-                href="https://minecraftast.org/server/23177"
+                href="https://minecraftlist.org/server/23177"
               >
-                Minecraftast.org
+                Minecraftlist.org
               </a>
             </li>
             <li>
